@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Último Número Primo de Mersenne con Brython</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.5/brython.min.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onload="brython()">
+    <center>
+        <h2>Matemáticas Discretas</h2>
+        <h1>El Último Número Primo de Mersenne</h1><br>        
+    
+        <button id="boton-informacion" class="inicio">Información</button>
+        <button id="boton-calculadora-mersenne" class="inicio">Calculadora</button>        
+       
+        <div id="seccion-informacion" class="oculto tarjeta-informacion">
+            <h4>Información sobre los Números de Mersenne</h4>
+            <div id="contenido-informacion">
+                <p>Los números de Mersenne son números enteros que tienen la forma: 2^n -1</p>
+                <p>Donde 𝑛 es un número entero positivo.</p>
+                <p><strong>Historia:</strong> Llevan el nombre del monje francés Marin Mersenne, quien estudió estos números en el siglo XVII.</p>
+                <p><strong>Búsqueda de nuevos primos:</strong> Los primos de Mersenne son de gran interés en matemáticas y se utilizan programas informáticos para encontrar nuevos.</p>
+                <p><strong>Dato:</strong> El mayor número primo conocido es un número de Mersenne, el cual es 2^82,589,933-1 y consta de: 24,862,048 dígitos</p>
+                <p>Se descubrió en 2018 utilizando computadoras voluntarias y un software especializado para el proyecto Great Internet Mersenne Prime Search</p>
+                <p id="nota">⚠️Nota: Este es un algoritmo elaborado con Python. Dicho lenguaje no procesa tantos dígitos, sin embargo, la calculadora funciona hasta cifras de millones.</p>
+            </div>
+            <button id="boton-volver-informacion" class="bSecundario">Volver</button>
+        </div>
+    
+        <div id="seccion-calculadora-mersenne" class="oculto">
+            <label for="potencia">Potencia:</label>
+            <input type="number" id="potencia" >
+            <button id="boton-calcular" class="bSecundario">Calcular</button>
+            <div id="resultado"></div><br>
+            <button id="boton-volver" class="bSecundario">Volver</button>
+        </div>
+        
+        <br><br><hr>
+
+        <footer>
+            <p>Proyecto Realizado Por: Salvador Martínez Jiménez</p>
+            <p>Made With</p>
+            <img src="logo_py.png" id="logo">
+        </footer>
+    </center>
+   
+    <script type="text/python" src="sp.py"></script>
+</body>
+</html>
+
+
+
+
+
+
