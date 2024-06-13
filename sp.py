@@ -3,7 +3,7 @@ from browser import document, alert
 def calcular_numero_mersenne(p):
     return (2 ** p) - 1
 
-def es_primo(n, k=5):
+def es_primo(n, k=7):
     if n <= 1:
         return False
     if n <= 3:
